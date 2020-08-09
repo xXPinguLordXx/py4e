@@ -5,7 +5,6 @@ hours = input("Enter hours:")
 try:
     hours = float(hours)
 except:
-    hours = -1
     print('Error, please enter numeric input')
     exit()
 
@@ -14,7 +13,6 @@ rate = input("Enter rate:")
 try:
     rate = float(rate)
 except:
-    rate = -1
     print('Error, please enter numeric input')
     exit()
 
