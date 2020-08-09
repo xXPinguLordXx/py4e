@@ -1,5 +1,7 @@
-sum = 0 #declare this shit outside the loop because if you put it inside it will just get looped forever
-count = 0 #declare this outside so that it is accessible by the entire program outside and not just within the loop
+#declare this shit outside the loop because if you put it inside it will just get looped forever
+#declare this outside so that it is accessible by the entire program outside and not just within the loop
+sum = 0
+count = 0
 
 while True:
     number = input ("Enter a number: ")
