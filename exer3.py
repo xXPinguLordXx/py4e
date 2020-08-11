@@ -9,4 +9,4 @@ if hours > T:
     print(OT+OGPay)
 else:
     OGPay = hours*rate
-    print(OGPay)
+    print("Pay:", OGPay)
