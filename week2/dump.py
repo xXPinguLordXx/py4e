@@ -1,8 +1,8 @@
-fhand = open('romeo.txt')
+bigcount = None
+bigword = None
+for word,count in counts.items():
+    if bigcount is None or count > bigcount:
+        bigword = word
+        bigcount = count
 
-stanza = fhand.read()
-print(stanza)
-
-for line in stanza:
-    word = line.split()
-    print(word)
+print(bigword, bigcount)

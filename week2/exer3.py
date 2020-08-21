@@ -7,11 +7,13 @@ while True:
 
     try:
         number = float(number)
-        numlist.append(number)
+
 
     except:
         print('Invalid input')
         continue
+
+    numlist.append(number)
 
 if len(numlist) == 0:
     print(None)

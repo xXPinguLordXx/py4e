@@ -2,10 +2,12 @@ fhand = open('romeo.txt')
 stuff = list()
 
 for line in fhand:
-    line2 = line.split()
-    for word in line2:
+    words = line.split()
+    for word in words:
         if word not in stuff:
             stuff.append(word)
 
-stuff.sort()
-print(stuff)
+print(sorted(stuff))
+
+# stuff.sort()
+# print(stuff)
