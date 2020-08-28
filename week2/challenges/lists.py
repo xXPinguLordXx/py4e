@@ -2,21 +2,26 @@ if __name__ == '__main__':
     N = int(input())
 
 numlist = list()
-cmd = str(input())
 
-
-# COMMANDS
+for i in range(N):
+    cmd = str(input())
     if 'insert' in cmd:
-        i = int(cmd.split()[1])
-        e = int(cmd.split()[2])
-        numlist.insert(e,i)
-        print(numlist)
+        numlist.insert(int(cmd.split()[1]),int(cmd.split()[2]))
+
     elif cmd == 'print':
         print(numlist)
 
+    elif 'remove' in cmd:
+        numlist.remove(int(cmd.split()[1]))
+
+    elif 'append' in cmd:
+        numlist.append(int(cmd.split()[1]))
+
     elif cmd == 'sort':
-        numlist.sorted()
+        numlist.sort()
+
     elif cmd == 'pop':
         del numlist[-1]
+
     elif cmd == 'reverse':
         numlist.reverse()
